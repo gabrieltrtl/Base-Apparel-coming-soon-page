@@ -48,19 +48,23 @@ body {
 }
 
 .header {
-  align-self: start;
+  justify-self: center;
+  @include device(desktop) {
+    justify-self: start;
+  
+  }
 }
 
 .header__wrapper {
-  max-width: 23.4375rem;
+  max-width: 375px;
   margin: 0 auto;
   padding: 1.9375rem 0rem 2rem 2rem;
   @include device(tablet) {
-    max-width: 11.8125rem;
+    max-width: 189px;
     padding: 4.6875rem 0rem 3.3125rem 0rem;
   }
   @include device(desktop) {
-    padding: 4.6875rem 0rem 8.5rem 0rem;
+    padding: 4.6875rem 0rem 8.5rem 10.3125rem;
   }
 }
 
@@ -83,6 +87,7 @@ body {
     grid-column: 2;
     grid-row: 1 / 4;
     max-width: initial;
+    margin-bottom: initial;
   }
 }
 
@@ -90,16 +95,27 @@ body {
   text-align: center;
   max-width: 19.4375rem;
   justify-self: center;
+  @include device(desktop) {
+    max-width: 445px;
+    text-align: left;
+    justify-self: start;
+    margin-left: 165px;
+    margin-right: 50px;;
+  }
 }
 
 .container__title {
-  font-size: 2.5rem;
+  font-size: map-get($fonts, "$large2");
   letter-spacing: 10.83px;
   line-height: 1.05;
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: $color2;
   font-weight: 600;
+  @include device(desktop) {
+    font-size: map-get($fonts, "$large3");
+    margin-bottom: 32px;
+  }
 }
 
 .title__detail {
@@ -112,6 +128,10 @@ body {
   line-height: 1.57;
   color: $color4;
   margin-bottom: 2rem;
+  @include device(desktop) {
+    font-size: map-get($fonts, "$small");
+    margin-bottom: 2.5rem;
+  }
 }
 
 .container__form {
@@ -123,13 +143,16 @@ input[type="email"] {
   border-radius: 28px;
   border: 2px solid $color4;
   background-color: transparent;
-  padding: 0.875rem 0 0.875rem 1.5rem;
+  padding: 14px 0 14px 24px;
   &::placeholder {
     font-size: map-get($fonts, "$xsmall");
     color: $color4;
     line-height: 2;
     font-weight: 400;
     opacity: 0.5;
+  }
+  @include device(desktop) {
+    padding: 18px 0 18px 24px;
   }
 }
 
@@ -140,6 +163,9 @@ input[type="email"] {
   background-image: linear-gradient(to right, #F8BFBF, #EE8B8B);
   padding: 0.9375rem 1.75rem;
   border-radius: 28px;
+  @include device(desktop) {
+    padding: 1.125rem 2.75rem;
+  }
 }
 
 .form__error-icon {
@@ -150,7 +176,7 @@ input[type="email"] {
   display: none;
 }
 
-.form_error-text {
+.form__error-text {
   color: #F96464;
   font-size: 0.8125rem;
   line-height: 2;
