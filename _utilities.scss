@@ -2,7 +2,7 @@
 
 @mixin device($device) {
   @if $device == tablet {
-    @media (min-width: 43.75rem) {
+    @media (min-width: 700px) {
       @content;
     }
   }  
@@ -16,16 +16,15 @@
 // Colors
 
 $color1: #FFFFFF;
-$color2: #131518;
-$color3: #262E38;
-$color4: #7C8798;
-$color5: #969FAD;
-$color6: #FC7614;
+$color2: #423A3A;
+$color3: #EE8B8B;
+$color4: #CE9898;
+$color5: linear-gradient(to bottom, #FFFFFF, #FFF4F4);
 
 //Typography
 $fonts: (
-  "$xsmall": 0.875rem,
-  "$small": 0.9375rem,
-  "$medium": 1.5rem,
-  "$large": 1.75rem,
+  "$xsmall": 14px,
+  "$small": 15px,
+  "$medium": 24px,
+  "$large": 28px,
 );
