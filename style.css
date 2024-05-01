@@ -43,38 +43,38 @@ body {
 }
 
 .header__wrapper {
-  max-width: 375px;
+  max-width: 23.4375rem;
   margin: 0 auto;
-  padding: 31px 0px 32px 32px;
+  padding: 1.9375rem 0rem 2rem 2rem;
 }
 @media (min-width: 700px) {
   .header__wrapper {
-    max-width: 189px;
-    padding: 75px 0px 53px 0px;
+    max-width: 11.8125rem;
+    padding: 4.6875rem 0rem 3.3125rem 0rem;
   }
 }
 @media (min-width: 75rem) {
   .header__wrapper {
-    padding: 75px 0px 136px 0px;
+    padding: 4.6875rem 0rem 8.5rem 0rem;
   }
 }
 
 .header__logo {
-  max-width: 132px;
+  max-width: 8.25rem;
 }
 @media (min-width: 700px) {
   .header__logo {
-    max-width: 189px;
+    max-width: 11.8125rem;
   }
 }
 
 .model {
   justify-self: center;
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 @media (min-width: 700px) {
   .model {
-    max-width: 400px;
+    max-width: 25rem;
   }
 }
 @media (min-width: 75rem) {
@@ -87,16 +87,16 @@ body {
 
 .container {
   text-align: center;
-  max-width: 311px;
+  max-width: 19.4375rem;
   justify-self: center;
 }
 
 .container__title {
-  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: 10.83px;
   line-height: 1.05;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   color: #423A3A;
   font-weight: 600;
 }
@@ -110,7 +110,7 @@ body {
   font-size: 14px;
   line-height: 1.57;
   color: #CE9898;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .container__form {
@@ -122,7 +122,7 @@ input[type=email] {
   border-radius: 28px;
   border: 2px solid #CE9898;
   background-color: transparent;
-  padding: 14px 0 14px 24px;
+  padding: 0.875rem 0 0.875rem 1.5rem;
 }
 input[type=email]::placeholder {
   font-size: 14px;
@@ -137,7 +137,7 @@ input[type=email]::placeholder {
   right: 0;
   top: 0;
   background-image: linear-gradient(to right, #F8BFBF, #EE8B8B);
-  padding: 15px 28px;
+  padding: 0.9375rem 1.75rem;
   border-radius: 28px;
 }
 
@@ -146,12 +146,13 @@ input[type=email]::placeholder {
   top: 50%;
   right: 27%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 .form_error-text {
   color: #F96464;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 2;
   text-align: left;
-  padding-left: 32px;
+  padding-left: 2rem;
 }/*# sourceMappingURL=style.css.map */

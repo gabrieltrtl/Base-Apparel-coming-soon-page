@@ -29,16 +29,16 @@
       Hello fellow shoppers! We're currently building our new fashion store.
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
-    <form class="container__form" action="">
-      <input type="email" placeholder="Email Address"></input>
+    <form class="container__form" id="form" name="form" action="">
+      <input type="email" id="email" name="email" placeholder="Email Address">
       <img class="form__error-icon" src="./images/icon-error.svg" alt="">
-      <button class="form__btn">
+      <button class="form__btn" type="submit">
         <img src="./images/icon-arrow.svg" alt="">
       </button>
     </form>
-    <p class="form_error-text">Please provide a valid email</p>
+    <p class="form_error-text"></p>
   </main>
   
-  <script src="./main.js"></script>
+  <script src="/main.js"></script>
 </body>
 </html>
