@@ -171,6 +171,10 @@ input[type=email]::placeholder {
   background-image: linear-gradient(to right, #F8BFBF, #EE8B8B);
   padding: 0.9375rem 1.75rem;
   border-radius: 28px;
+  box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.3);
+}
+.form__btn:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(to right, #F8BFBF, #EE8B8B);
 }
 @media (min-width: 75rem) {
   .form__btn {
@@ -192,4 +196,15 @@ input[type=email]::placeholder {
   line-height: 2;
   text-align: left;
   padding-left: 2rem;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
 }/*# sourceMappingURL=style.css.map */
