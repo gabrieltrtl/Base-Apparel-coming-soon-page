@@ -96,6 +96,11 @@ body {
   max-width: 19.4375rem;
   justify-self: center;
 }
+@media (min-width: 700px) {
+  .container {
+    margin-bottom: 6.25rem;
+  }
+}
 @media (min-width: 75rem) {
   .container {
     max-width: 445px;
@@ -166,8 +171,8 @@ input[type=email]::placeholder {
 
 .form__btn {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -2px;
+  top: -1px;
   background-image: linear-gradient(to right, #F8BFBF, #EE8B8B);
   padding: 0.9375rem 1.75rem;
   border-radius: 28px;

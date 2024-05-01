@@ -95,6 +95,9 @@ body {
   text-align: center;
   max-width: 19.4375rem;
   justify-self: center;
+  @include device(tablet) {
+    margin-bottom: 6.25rem;
+  }
   @include device(desktop) {
     max-width: 445px;
     text-align: left;
@@ -158,8 +161,8 @@ input[type="email"] {
 
 .form__btn {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -2px;
+  top: -1px;
   background-image: linear-gradient(to right, #F8BFBF, #EE8B8B);
   padding: 0.9375rem 1.75rem;
   border-radius: 28px;

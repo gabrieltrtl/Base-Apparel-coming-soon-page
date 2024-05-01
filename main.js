@@ -4,7 +4,7 @@ function validateEmail(event) {
   
   const emailInput = document.getElementById('email');
   let emailError = document.querySelector('.form__error-text');
-  let imgError = document.querySelector('form__error-icon');
+  let imgError = document.querySelector('.form__error-icon');
   const email = emailInput.value.trim();
 
   // Expressão regular para validar o formato do email
@@ -12,7 +12,7 @@ function validateEmail(event) {
 
   if (email === "" || !emailPattern.test(email)) {
     emailError.textContent = "Please provide a valid email";
-
+    imgError.style.display = "block";
     emailInput.focus();
     event.preventDefault();
   } else {
